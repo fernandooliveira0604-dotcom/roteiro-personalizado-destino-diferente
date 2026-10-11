@@ -32,11 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build TanStack Start Static
+      - name: Build Project
         run: npm run build
-        env:
-          NITRO_PRESET: github-pages
-          PRESET: github-pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
